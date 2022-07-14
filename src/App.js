@@ -190,7 +190,7 @@ import  {BrowserRouter,Routes, Route } from 'react-router-dom';
 
 import About from './About';
 import Dashboard from './Dashboard';
-import Home from './Home';
+import Home from './Home'
 
 const App =() =>{
   return(

@@ -5,7 +5,7 @@ const About =()=>{
         <div>
             <center>
                 <h3> this  about page</h3>
-                <Link to='/'>back to home</Link>
+                <Link to='/'>Back to home</Link>
             </center>
         </div>
     )

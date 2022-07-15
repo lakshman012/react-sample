@@ -213,28 +213,38 @@
 
 
 
-import React from 'react';
-//import { BrowserRouter, Route ,Routers} from 'react-router-dom'
+//  import React from 'react';
+// //import { BrowserRouter, Route ,Routers} from 'react-router-dom'
 
- import  {BrowserRouter,Routes, Route } from 'react-router-dom';
+//  import  {BrowserRouter,Routes, Route } from 'react-router-dom';
 
-import About from './About';
- import Dashboard from './Dashboard';
-import Home from './Home'
-const App =() =>{
-    return(
-      <div>
-        <BrowserRouter>
-       <Routes>
-          <Route path='/' element= {<Home/>}/>
-          <Route path='/dashboard'element={<Dashboard/>}/>
-         <Route path='/about' element={<About/>}/>
+// import About from './About';
+//  import Dashboard from './Dashboard';
+// import Home from './Home'
+// import Pagenotfound from './pagenotfound';
+// const App =() =>{
+//     return(
+//       <div>
+//          <BrowserRouter>
+//        <Routes>
+//           <Route path='/' element= {<Home/>}/>
+//           <Route path='/dashboard'element={<Dashboard/>}/>
+//          <Route path='/about' element={<About/>}/>
+//          <Route path='*' element={<Pagenotfound/>}/>
   
           
-        </Routes>
-        </BrowserRouter>
-      </div>
-    )
-   }
-   export default App
+//         </Routes>import
+//         </BrowserRouter>
+//       </div>
+//     )
+//    }
+//    export default App
+import React from 'react';
+import Hoc from'./Hoc'
+const App = (props) =>{
+  return(
+  <h1>welcome user {props.name } </h1>
+  )
+}
+export default Hoc(App);
 
